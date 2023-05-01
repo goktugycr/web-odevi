@@ -1,0 +1,25 @@
+.kayisi{
+    
+    width:100px;
+    height:70px;
+    
+}
+.menu{
+    
+    text-align:center;
+    background-color:grey;
+    width:1700px;
+    height:20px;   
+    margin:0;        
+}
+a{
+    text-decoration: none;
+    color:white;
+    
+}
+.bos{
+    background-color:grey;
+    float:left;
+    height:1000px;
+    width:104px;
+}
