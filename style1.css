@@ -15,6 +15,7 @@
 a{
     text-decoration: none;
     color:white;
+    font-size:20px;
     
 }
 .bos{
@@ -23,3 +24,27 @@ a{
     height:1000px;
     width:104px;
 }
+.yazilar{
+    position:absolute;
+    top:9%;
+    left: 8%;
+}
+h1{
+    color:rgb(6, 6, 162);
+}
+h3{
+    color:rgb(6, 6, 162);
+}
+img{
+    width:500px;
+    height:350px;
+}
+p{
+    font-size:20px;
+    font-family: Cambria;
+}
+.fotolar{
+    color:blue;
+    text-decoration:underline;
+}
+
