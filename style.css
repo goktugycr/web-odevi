@@ -33,7 +33,7 @@ h1{
 .metin{
     display:flex;
     flex-direction:column;
- }
+}
  .buton{
     border:none;
     border-radius:30px;
@@ -41,7 +41,7 @@ h1{
     height:45px;
     outline:none;
     width: 100%;      
- }
+}
  .resim{
     position:absolute;
     top: 17%;
