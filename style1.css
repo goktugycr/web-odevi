@@ -13,7 +13,8 @@ a{
 .yazilar{
     position:absolute;
     top:9%;
-    left: 8%;
+    left: 3%;
+    right:3%;
 }
 h1{
     color:rgb(6, 6, 162);
@@ -33,21 +34,30 @@ p{
     color:blue;
     text-decoration:underline;
 }
+
+
 ul {
     list-style-type: none;
-
+    position: relative;
+    left:0px;
     margin: 0;
+    
 
     padding: 0;
 
+    
+
     overflow: hidden;
 
-    background-color: grey;
+    background-color: rgb(22, 135, 206);
 
     
 }
 
 li {
+    position:relative;
+    left:0px;
+
     float: left;
     
     
@@ -57,7 +67,7 @@ li a {
 
     
 
-   
+    
     display: block;
 
     color: white;
@@ -74,12 +84,12 @@ li a {
 
 li a:hover:not(.aktif) {
 
-    background-color: #111;
+    background-color: rgb(58, 58, 95)
 }
 
 .aktif {
 
-    background-color: blue;
+    background-color: rgb(58, 58, 95);
 }
 
 
