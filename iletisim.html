@@ -59,24 +59,24 @@
     </header>
     <div class="container">
         <h2 class="display-5 text-danger mb-5">Geri Bildirim</h2>
-        <form action="iletisim.php">
+        <form action="iletisim.php" id="form" method="post" target="_blank" enctype="multipart/form-data" >
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">>></span>
-                <input type="text" class="form-control" placeholder="İsim" aria-label="Username"
-                    aria-describedby="basic-addon1">
+                <input type="text"   name="adi" class="form-control" placeholder="İsim" aria-label="Username"
+                    aria-describedby="basic-addon1" autocomplete="off">
 
             </div>
 
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">>></span>
-                <input type="text" class="form-control" placeholder="Soyisim" aria-label="Username"
-                    aria-describedby="basic-addon1">
+                <input name="soyad" type="text" class="form-control" placeholder="Soyisim" aria-label="Username"
+                    aria-describedby="basic-addon1" autocomplete="off">
             </div>
 
             <div class="input-group mb-3">
 
                 <span class="input-group-text" id="basic-addon2">>></span>
-                <input id="email" type="email" class="form-control" placeholder="Email"
+                <input  type="email" name="posta" class="form-control" placeholder="Email"
                     aria-label="Recipient's username" aria-describedby="basic-addon2" autocomplete="off">
 
             </div>
@@ -112,10 +112,10 @@
                     </div>
                     <div class="col">
                         <h5>Eğitim Durumunuz</h5>
-                        <div><input class="form-check-button" type="checkbox">İlkokul</div>
-                        <div><input class="form-check-button" type="checkbox">Ortaokul</div>
-                        <div><input class="form-check-button" type="checkbox">Lise</div>
-                        <div><input class="form-check-button" type="checkbox">Üniversite</div>
+                        <div><input class="form-check-button" type="checkbox" name="ogrenim[]" value="ilkokul">İlkokul</div>
+                        <div><input class="form-check-button" type="checkbox" name="ogrenim[]" value="ortaokul">Ortaokul</div>
+                        <div><input class="form-check-button" type="checkbox" name="ogrenim[]" value="lise">Lise</div>
+                        <div><input class="form-check-button" type="checkbox" name="ogrenim[]" value="üniversite">Üniversite</div>
                     </div>
                 </div>
                 <br>
@@ -123,8 +123,8 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="file">Resminizi Seçiniz:</label><br>
-                            <input type="file" class="form-control-file" id="file">
+                            <label for="file">Dosya Seçiniz:</label><br>
+                            <input type="file" class="form-control-file" id="file" name="resim">
 
 
 
@@ -140,15 +140,15 @@
                     <div class="col-4">
                         <div class="form-group">
                             <h5>Memleket</h5>
-                            <select class="form-control" id="sehir">
-                                <option value="">Sakarya</option>
-                                <option value="" selected>Malatya</option>
-                                <option value="">Kayseri</option>
-                                <option value="">Konya</option>
-                                <option value="">İstanbul</option>
-                                <option value="">Kahramanmaraş</option>
-                                <option value="">Kocaeli</option>
-                                <option value="">Elazığ</option>
+                            <select class="form-control" id="sehir" name="memleket">
+                                <option value="Sakarya">Sakarya</option>
+                                <option value="Malatya" selected>Malatya</option>
+                                <option value="Kayseri">Kayseri</option>
+                                <option value="Konya">Konya</option>
+                                <option value="İstanbul">İstanbul</option>
+                                <option value="Kahramanmaraş">Kahramanmaraş</option>
+                                <option value="Kocaeli">Kocaeli</option>
+                                <option value="Elazığ">Elazığ</option>
                             </select>
                         </div>
 
@@ -156,13 +156,13 @@
                 </div>
                 <div class="form-outline mb-4">
                     <h5>Önerileriniz</h5>
-                    <textarea class="form-control" id="textAreaExample6" rows="3"></textarea>
+                    <textarea class="form-control" id="textAreaExample6" rows="3" name="oneri"></textarea>
 
                 </div>
                 
                 <div class="row">
                     
-                    <button type="submit" class="btn btn-primary btn-block"> Gönder </button>
+                    <button type="submit" class="btn btn-primary btn-block" > Gönder </button>
                     
                     
                     
@@ -181,6 +181,8 @@
 
         </form>
     </div>
+
+  
 
 
 </body>
