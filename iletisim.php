@@ -53,9 +53,9 @@
    <br>
    <?php
    
-   echo "Öğrenim Durumunuz:";
+    echo "Öğrenim Durumunuz:";
     $ogrenim=$_POST['ogrenim'];
-    $bosluk="";
+    
     foreach($ogrenim as $key => $value){
         
         echo $value;
@@ -78,15 +78,18 @@
    <br>
    <?php
    
-   echo "Resim:";
+   echo "Dosya Durumu:";
     
-    $tmp_name=$_FILES['resim']['tmp_name'];
-    $name=$_FILES['resim']['name'];
+    $tmp_name=$_FILES['dosya']['tmp_name'];
+    $name=$_FILES['dosya']['name'];
     $upload_dir="uploads";
     if(move_uploaded_file($tmp_name,"$upload_dir/$name"))
     {
         echo "Dosya başarılı bir şekilde yüklendi";
         
+    }
+    else{
+        echo "Dosya yüklenemedi";
     }
      
     ?>
