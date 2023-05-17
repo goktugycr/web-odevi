@@ -1,6 +1,6 @@
 <?php
 session_start();
-require "giris.php";
+require "index.php";
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $username=($_POST["ad"]);
     $password=($_POST["sifre"]);
@@ -11,12 +11,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             echo("<h2>Kullanıcı adı veya şifre hatalı Yönlendiriliyorsunuz<h2>");            
             comeBack(3);
         }else{
-            echo '<h2>Giriş yapıldı profil sayfasına Yönderiliyorsunuz<h2>';
+            echo '<h2>Hoşgeldiniz b221210058 profil sayfasına yönderiliyorsunuz<h2>';
             go("Anasayfa.html",3);       
         }
 }else{
     
-    go("Giris.html",3);
+    go("index.html",3);
     exit("<h2>Bu sayfayı görüntüleme yetkiniz yok. Yönlendiriliyorsunuz<h2>");
 }
 
