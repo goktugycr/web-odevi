@@ -35,15 +35,22 @@ function validateForm(){
     {
         alert("Lütfen formda boş kısım bırakmayın ve öncelikle önerilerinizi girin.");
         return false;
-    }
-    
-   
-    
-
-   
-    
-    
-    
- 
-    
+    }  
 }
+
+document.getElementById("btn2").addEventListener("click", function () {
+    document.forms["form"].reset();
+});
+
+document.getElementById("btn1").addEventListener("click", function (e) {
+    
+    var metin = document.getElementById("posta").value;
+    if (metin.indexOf('@') !== -1 && metin.indexOf('.') !== -1) {
+        
+        
+    } else {
+        alert("Lütfen girdiğiniz ifade email formatında olsun");
+        e.preventDefault();
+    }
+});
+
